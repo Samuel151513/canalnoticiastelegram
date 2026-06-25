@@ -79,14 +79,18 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="card" role="main" aria-labelledby="profile-name">
-      <div class="profile">
-        <div class="avatar" aria-hidden="false">
-          <!-- Se sua foto é a logo do Telegram, agora a página deixa isso claro como CANAL OFICIAL -->
-          <img src=".../images/foto.png" alt="Foto do perfil de Maria Eduarda de Souza" onerror="this.style.display='none'; this.parentElement.querySelector('.avatar-fallback').style.display='flex';" style="display: none;">
-          <div class="avatar-fallback" style="display: flex;" aria-hidden="true">ME</div>
-        </div>
+<div class="avatar" aria-hidden="false">
+    <img
+        src="./images/foto.png"
+        alt="Foto do perfil"
+        style="width:120px; height:120px; border-radius:50%; object-fit:cover;"
+        onerror="this.style.display='none'; document.querySelector('.avatar-fallback').style.display='flex';"
+    >
+
+    <div class="avatar-fallback" style="display:none;" aria-hidden="true">
+        ME
+    </div>
+</div>
 
         <div>
           <h1 id="profile-name">Futebol Flash</h1>
